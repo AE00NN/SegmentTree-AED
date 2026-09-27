@@ -1,15 +1,14 @@
 # Anima tu Estructura de Datos — Segment Tree
 
-Proyecto Final 1 del curso **CS2023 - Algoritmos y Estructuras de Datos** (UTEC, 2026-2).
+Proyecto Final 1 del curso **Algoritmos y Estructuras de Datos**.
 
 Video educativo que explica y demuestra visualmente el funcionamiento de un
 **Segment Tree** (range sum query + point update), con una animación generada
-a partir de una implementación real del algoritmo en C++ (no se simulan
-valores "a mano").
+a partir de una implementación real del algoritmo en C++.
 
-**Integrante:** André
+**Integrante:** André Valle Enriquez
 
-## Contenido del video generado (~74s)
+## Contenido del video generado
 
 1. Título y créditos.
 2. `build` del árbol sobre el arreglo `[2, 4, 5, 7, 8, 9]`, luego `query(1, 4)`
@@ -41,13 +40,7 @@ animation/
 build_video.sh      # Reproduce todo el pipeline de punta a punta
 ```
 
-> El video final (`video/segment_tree_video.mp4`) y el informe se entregan
-> por separado (Gradescope), tal como pide el enunciado. Este repositorio
-> solo contiene el código fuente que genera la animación; al correr
-> `build_video.sh` el video se genera localmente en una carpeta `video/`
-> que no se versiona en git.
-
-## Cómo funciona la animación (real, no simulada)
+## Cómo funciona la animación
 
 1. `src/main.cpp` ejecuta el Segment Tree sobre datos reales y, mientras
    corre, cada operación interna (visitar un nodo, fijar su valor, cubrir
@@ -58,8 +51,6 @@ build_video.sh      # Reproduce todo el pipeline de punta a punta
    ffmpeg) resaltando en cada frame exactamente el nodo/estado que el
    algoritmo real está procesando en ese instante.
 3. `animation/slides.py` genera las slides de texto (título, complejidad).
-4. Todos los clips se normalizan a 1280x720 y se concatenan con `ffmpeg`
-   en el video final.
 
 ## Requisitos
 

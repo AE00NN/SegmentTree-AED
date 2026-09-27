@@ -6,10 +6,7 @@
 #include <string>
 #include <sstream>
 
-// Segment Tree para range sum query + point update.
-// Cada operación registra sus pasos internos en un logger JSON
-// para que la animación se genere a partir de la ejecución REAL
-// del algoritmo (no valores puestos "a mano").
+
 class StepLogger {
 public:
     explicit StepLogger(const std::string& path) : out(path) {
@@ -22,8 +19,6 @@ public:
         out.close();
     }
 
-    // step: tipo de evento (build_visit, build_set, update_visit, update_set,
-    //        query_visit, query_leaf, query_partial, query_out_of_range)
     void log(const std::string& step, int node, int start, int end,
              long long value, const std::string& extra = "") {
         if (!first) out << ",\n";

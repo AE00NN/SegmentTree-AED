@@ -1,0 +1,7 @@
+src/segtree
+src/*.json
+animation/norm/
+animation/*.mp4
+video/
+report/
+*.png

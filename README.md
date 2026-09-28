@@ -60,6 +60,37 @@ build_video.sh      # Reproduce todo el pipeline de punta a punta
 
 ## Cómo reproducir el video
 
+### Opción 1: en Google Colab (recomendado, sin instalar nada localmente)
+
+Colab ya trae Linux, `g++` y Python preinstalados, así que solo falta
+`ffmpeg` y `matplotlib`. En un notebook nuevo en
+[colab.research.google.com](https://colab.research.google.com), ejecutar en
+celdas separadas:
+
+```python
+!git clone https://github.com/AE00NN/SegmentTree-AED.git
+%cd SegmentTree-AED
+```
+
+```python
+!apt-get install -y ffmpeg -q > /dev/null
+!pip install matplotlib -q
+```
+
+```python
+!chmod +x build_video.sh
+!bash build_video.sh
+```
+
+```python
+from google.colab import files
+files.download('video/segment_tree_video.mp4')
+```
+
+El último paso descarga el video generado directamente a la computadora.
+
+### Opción 2: localmente (Linux o macOS)
+
 ```bash
 ./build_video.sh
 ```

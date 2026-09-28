@@ -23,7 +23,7 @@ python3 animation/animate.py src/steps_edge_full_range.json \
 echo "== 3. Generando slides de titulo y complejidad =="
 python3 animation/slides.py animation/title.mp4 5 \
   "Anima tu Estructura de Datos" "Segment Tree" \
-  "CS2023 - Algoritmos y Estructuras de Datos - UTEC" "Integrantes: Andre"
+  "CS2023 - Algoritmos y Estructuras de Datos" "Integrantes: André Valle Enriquez"
 python3 animation/slides.py animation/complexity.mp4 10 \
   "Analisis de complejidad" \
   "Build: O(N) - visita cada nodo una vez al construir" \

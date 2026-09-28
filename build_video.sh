@@ -12,6 +12,7 @@ g++ -std=c++17 -O2 -o src/segtree src/main.cpp
 
 echo "== 2. Generando escenas animadas =="
 mkdir -p animation/norm
+mkdir -p video
 python3 animation/animate.py src/steps_main.json \
   "Segment Tree - Build, Query(1,4) y Update(3,10)" animation/out_main.mp4 5 3
 python3 animation/animate.py src/steps_edge_single.json \
